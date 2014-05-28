@@ -53,9 +53,7 @@ public class HostMonitoringSettings
      * @param hostMonitorSettings       The monitor settings.
      */
     public void add(String name, HostMonitorSettings hostMonitorSettings)
-    {
-        System.out.println(name.toString());
-        System.out.println(hostMonitorSettings.getResources().size());
+    {       
         hostMonitorSettings_.put(name, hostMonitorSettings);
     }
 

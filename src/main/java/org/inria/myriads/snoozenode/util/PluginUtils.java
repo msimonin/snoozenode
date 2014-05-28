@@ -103,8 +103,7 @@ public final class PluginUtils
         }
         catch (MalformedURLException | ClassNotFoundException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException | SecurityException e)
         {            
-            e.printStackTrace();
-            throw new Exception("Unable to instantiate the custom class");
+            log_.error("Unable to instantiate the custom class " + e.getMessage());
         }        
         return customObject;
     }
